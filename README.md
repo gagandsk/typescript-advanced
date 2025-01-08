@@ -22,3 +22,4 @@ npx tsc --watch
 ```
 
 https://typestrong.org/ts-node/docs/
+https://fakerjs.dev/
