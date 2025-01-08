@@ -17,6 +17,6 @@ products.push({
   stock: 90
 });
 
-const addProduct = (data: Product) => {
+const createProduct = (data: Product) => {
   products.push(data)
 }
