@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { createProduct, products } from "./products/product.service";
+import { createProduct, products, updateProduct } from "./products/product.service";
 
 for (let index = 0; index < 10; index++) {
   createProduct({
@@ -17,3 +17,9 @@ for (let index = 0; index < 10; index++) {
 }
 
 console.log(products);
+const product1 = products[0];
+updateProduct(product1.id, {
+  title: 'Nike Blazar 77 vintage',
+  stock: 41,
+})
+
